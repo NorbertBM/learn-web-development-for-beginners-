@@ -1,0 +1,126 @@
+/* Element selector */
+h1 {
+  /* color: red; this is the way we change colors */
+  /* font-size: 30px; this is the way we change font size */
+}
+p {
+  color: blue;
+}
+p {
+  color: red;
+}
+/* Class selector */
+
+.highlight {
+  color: blue;
+  background-color: red;
+}
+
+/* ID selector */
+
+#main-content {
+  width: 10%;
+}
+
+/* Important properties */
+#impProps {
+  color: red;
+  color: #00ff00;
+  /* background-color: rgb(15, 15, 15);
+   */
+  background-color: gray;
+  border: 1px solid red;
+  font-size: 32px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  width: auto;
+  height: 400px;
+  margin: 32px;
+  padding: 20px;
+  text-align: left;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: #f0f0f0;
+}
+
+h1 {
+  color: #333;
+  text-align: center;
+}
+p {
+  color: #666;
+  margin-bottom: 10px;
+  padding-left: 10px;
+}
+.highlight {
+  background-color: yellow;
+  padding: 10px;
+  border: 2px solid orange;
+  color: #666;
+}
+/*Pseudo-classes  */
+
+a:hover {
+  text-decoration: underline;
+}
+a {
+  text-decoration: none;
+  color: #666;
+}
+a:visited {
+  color: purple;
+}
+/* Pseudo-elements */
+a:hover::after {
+  content: "visited";
+  font-size: small;
+}
+
+ul li {
+  /* color: red; */
+}
+ul > li {
+  /* color: blue; */
+}
+li {
+  /* color: green; */
+}
+ul {
+  color: #333;
+}
+li {
+  color: red;
+  list-style: none;
+}
+ul li {
+  color: green;
+}
+
+li {
+  color: yellow;
+}
+ul li#id {
+  color: purple;
+}
+#id {
+  color: blue;
+}
+
+/* Flexbox */
+
+ul.list-1 {
+  display: flex;
+  flex-direction: column-reverse;
+  flex-direction: row-reverse;
+  gap: 10px;
+  flex-direction: column;
+  gap: 0 20px;
+  background-color: #000;
+}
+ul#grid-list {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  gap: 40px;
+}

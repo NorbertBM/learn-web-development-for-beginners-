@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(2, 8, 91);
+  background: radial-gradient(circle, rgb(6, 14, 124), rgba(0, 0, 0, 1) 100%);
+}
+.carousel {
+  width: 100%;
+  height: 35vh;
+  overflow: hidden;
+  position: relative;
+
+  .carousel-slide {
+    width: 300%;
+    display: flex;
+    animation: carousel-animation 15s infinite alternate;
+    & img {
+      width: calc(100% / 3);
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
+
+@keyframes carousel-animation {
+  0% {
+    transform: translateX(0);
+  }
+  33.33% {
+    transform: translateX(0);
+  }
+  66.66% {
+    transform: translateX(-33.33%);
+  }
+  100% {
+    transform: translateX(-66.66%);
+  }
+}
