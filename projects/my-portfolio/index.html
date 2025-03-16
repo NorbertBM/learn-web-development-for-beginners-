@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>My Portfolio</title>
+  </head>
+  <body>
+    <!-- Navbar section -->
+    <nav class="navbar">
+      <h1>My Portfolio</h1>
+      <button id="theme-toggle" class="theme-toggle">🌙</button>
+    </nav>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container">
+        <h2>Hello, I'm <span class="highlight">Norbert</span></h2>
+        <p>A Passionate Web Developer</p>
+        <a href="#projects" class="btn">View Projects</a>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+      <div class="container">
+        <h3>My Projects</h3>
+        <div class="projects-grid">
+          <div class="project-card">
+            <h4>Project 1</h4>
+            <p>Description of project</p>
+          </div>
+
+          <div class="project-card">
+            <h4>Project 2</h4>
+            <p>Description of project</p>
+          </div>
+          <div class="project-card">
+            <h4>Project 3</h4>
+            <p>Description of project</p>
+          </div>
+          <div class="project-card">
+            <h4>Project 4</h4>
+            <p>Description of project</p>
+          </div>
+          <div class="project-card">
+            <h4>Project 5</h4>
+            <p>Description of project</p>
+          </div>
+          <div class="project-card">
+            <h4>Project 6</h4>
+            <p>Description of project</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact / Footer  Section -->
+
+    <footer class="contact">
+      <h3>Contact Me</h3>
+      <p>Email: yourmail@mail.com</p>
+    </footer>
+    <!-- Dark Mode  Toggler -->
+    <script>
+      document
+        .getElementById("theme-toggle")
+        .addEventListener("click", function () {
+          document.body.classList.toggle("dark-mode");
+          console.log("click");
+        });
+    </script>
+  </body>
+</html>
