@@ -42,17 +42,57 @@
           class="px-4 py-2 bg-primary hover:bg-blue-800 transition-all text-white rounded"
           >Follows</a
         ><a
+          id="message-button"
           href="#"
           class="px-4 py-2 bg-transparrent hover:bg-gray-200 transition-all text-gray-700 dark:text-gray-200 rounded border border-gray-300 dark:border-gray-600 dark:hover:bg-gray-700"
           >Message</a
         >
       </div>
-      <button
+      <!-- <button
         onclick="document.documentElement.classList.toggle('dark')"
+        class="mt-6 text-blue-600 hover:underline cursor-pointer text-sm"
+      >
+        Toggle Dark Mode
+      </button> -->
+      <button
+        id="dark-mode-toggle"
         class="mt-6 text-blue-600 hover:underline cursor-pointer text-sm"
       >
         Toggle Dark Mode
       </button>
     </div>
+    <!-- Modal -->
+    <div
+      id="modal"
+      class="fixed inset-0 flex items-center justify-center bg-gray-900 bg-opacity-50 hidden"
+    >
+      <div
+        class="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6 max-w-sm w-full text-center"
+      >
+        <h2 class="text-xl font-semibold text-gray-800 dark:text-white">
+          Message Jane Doe
+        </h2>
+        <textarea
+          id="modal-input"
+          class="mt-4 w-full h-32 p-2 border border-gray-300 dark:border-gray-600 dark:text-white rounded-lg outline-2 focus:outline-hidden"
+          placeholder="Type your message..."
+        ></textarea>
+        <div class="mt-4 flex justify-center gap-4">
+          <button
+            id="modal-send-button"
+            class="cursor-pointer px-4 py-2 rounded bg-blue-600 text-white hover:bg-blue-700 transition"
+          >
+            Send
+          </button>
+          <button
+            onclick="document.getElementById('modal').classList.add('hidden')"
+            class="cursor-pointer px-4 py-2 rounded border border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700 transition"
+          >
+            Close
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
   </body>
 </html>
