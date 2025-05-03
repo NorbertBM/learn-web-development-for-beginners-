@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Document</title>
+    <style type="text/tailwindcss">
+      @import "tailwindcss";
+      @custom-variant dark (&:where(.dark, .dark *));
+    </style>
+  </head>
+  <body class="bg-gray-100 text-gray-900 dark:bg-gray-900 dark:text-white">
+    <header
+      class="fixed flex p-3 bg-white shadow-md w-full z-10 dark:bg-gray-800"
+    >
+      <h1 class="text-2xl font-bold">
+        <a href="#" class="text-blue-400 hover:text-blue-600">
+          Norbert's Portfolio</a
+        >
+      </h1>
+      <div class="w-full flex justify-end items-center">
+        <button
+          id="menu-toggle"
+          class="md:hidden p-2 bg-gray-200 dark:bg-gray-700 rounded"
+        >
+          ☰
+        </button>
+        <nav
+          id="menu"
+          class="absolute top-full left-0 w-full bg-white dark:bg-gray-800 md:static md:flex md:flex-row md:items-center md:space-x-6 hidden"
+        >
+          <a
+            href="#projects"
+            class="block px-4 py-2 text-gray-900 dark:text-gray-100 hover:text-blue-500 dark:hover:text-blue-400"
+            >Projects</a
+          ><a
+            href="#contact"
+            class="block px-4 py-2 text-gray-900 dark:text-gray-100 hover:text-blue-500 dark:hover:text-blue-400"
+            >Concat</a
+          ><a
+            href="#about"
+            class="block px-4 py-2 text-gray-900 dark:text-gray-100 hover:text-blue-500 dark:hover:text-blue-400"
+            >About</a
+          >
+        </nav>
+        <button
+          id="theme-toggle"
+          class="p-2 bg-gray-200 dark:bg-gray-700 rounded ml-4"
+        >
+          🌙
+        </button>
+      </div>
+    </header>
+    <!-- TODO: Main section -->
+    <main>
+      <!-- TODO: Hero Section -->
+      <section
+        class="flex flex-col items-center justify-center h-screen text-center"
+      >
+        <h2 class="text-4xl font-bold">
+          Hello, I'm <span class="text-blue-500">Norbert B.M</span>
+        </h2>
+        <p class="text-lg mt-4 font-normal">A Passionate Web Developer</p>
+        <a
+          href="#projects"
+          class="mt-6 px-6 py-3 bg-blue-500 text-white rounded shadow-md hover:bg-blue-600"
+        >
+          View Projects
+        </a>
+      </section>
+      <!-- TODO: Projects -->
+      <section
+        id="projects"
+        class="flex flex-col items-center justify-center h-screen text-center"
+      >
+        <div class="container mx-auto text-center">
+          <h3 class="text-3xl font-bold mb-10">My Projects</h3>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mx-2">
+            <div
+              class="p-6 bg-white dark:bg-gray-700 rounded shadow-sm hover:shadow-xl transition-shadow duration-300"
+            >
+              <h4 class="text-xl font-semibold">Project 1</h4>
+              <p class="mt-2">Description of project 1</p>
+            </div>
+            <div
+              class="p-6 bg-white dark:bg-gray-700 rounded shadow-sm hover:shadow-xl transition-shadow duration-300"
+            >
+              <h4 class="text-xl font-semibold">Project 1</h4>
+              <p class="mt-2">Description of project 1</p>
+            </div>
+            <div
+              class="p-6 bg-white dark:bg-gray-700 rounded shadow-sm hover:shadow-xl transition-shadow duration-300"
+            >
+              <h4 class="text-xl font-semibold">Project 1</h4>
+              <p class="mt-2">Description of project 1</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- TODO: Contact  -->
+      <section
+        id="contact"
+        class="flex flex-col items-center justify-center h-screen text-center py-20"
+      >
+        <h3 class="text-3xl font-bold">Contact Me</h3>
+        <p class="mt-4">
+          Email: <span class="text-gray-400">yoramil@example.com</span>
+        </p>
+        <p class="mt-4">
+          Website:
+          <a
+            href="https://norbert-bm-s-school.teachable.com/p/home"
+            class="text-gray-400 hover:text-blue-500"
+            >Norbert's School
+          </a>
+        </p>
+        <div class="mt-6 flex space-x-4">
+          <a
+            href="https://x.com/NBMenyhart"
+            class="text-blue-500 hover:underline"
+            >Twitter</a
+          >
+          <a
+            href="https://www.youtube.com/@NorbertWebDev"
+            class="text-blue-500 hover:underline"
+            >YouTube</a
+          >
+          <a
+            href="https://github.com/NorbertBM"
+            class="text-blue-500 hover:underline"
+            >GitHub</a
+          >
+        </div>
+      </section>
+    </main>
+    <!-- TODO: Button to top -->
+    <button
+      id="back-to-top"
+      class="fixed bottom-5 right-5 p-3 bg-blue-500 text-white rounded-full shadow-lg hidden"
+    >
+      ⬆️
+    </button>
+    <!-- TODO: Footer -->
+    <footer class="py-4 bg-gray-300 dark:bg-gray-700 text-center">
+      <p>
+        &copy; <span id="current-year"></span> Norbert BM. All rights reserved.
+      </p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
